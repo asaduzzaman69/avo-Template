@@ -1,0 +1,85 @@
+.tools {
+    grid-column: center-start / center-end;
+    padding: 10rem 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 1.5rem;
+
+    @media only screen and (max-width:$bp-medium){
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @media only screen and (max-width: $bp-smallest) {
+        grid-template-columns: repeat(1, 1fr);
+      }
+  }
+
+.features {
+    grid-column: center-start / full-end;
+    display:grid;
+    grid-template-columns: minmax(min-content,50rem)  1fr;
+    padding: 10rem 0;
+
+    @media only screen and (max-width: 48.875em) {
+        grid-template-columns: 1fr;
+    }
+}
+
+.services {
+    grid-column: full-start / full-end;
+    padding: 10rem 0 ;
+    display:grid;
+    grid-template-columns: $sub-grid;
+
+}
+
+
+.collections {
+    grid-column: center-start / center-end;
+    display:grid;
+    grid-template-columns: repeat(2, minmax(min-content, 1fr));
+    column-gap: 13rem;
+    padding: 10rem 0;
+}
+
+.offers {
+
+    grid-column: full-start / full-end;
+    display:grid;
+    grid-template-columns: $sub-grid;
+    padding: 10rem 0;
+    background-color:$color-grey-1; 
+    
+}
+
+.teams {
+    grid-column: full-start / full-end;
+    display:grid;
+    grid-template-columns: $sub-grid;
+    padding: 10rem 0;
+}
+
+.posts {
+    grid-column: 1 / -1;
+    display:grid;
+    grid-template-columns: $sub-grid;
+    padding: 10rem 0;
+}
+
+.communities {
+    grid-column: 1 / -1;
+    display:grid;
+    grid-template-columns: $sub-grid;
+    padding: 7rem 0;
+    background-image: url(./../image/bg-3.jpg);
+    background-position: left;
+}
+
+.footers {
+    grid-column: 1 / -1;
+    display:grid;
+    grid-template-columns: $sub-grid;
+    padding: 10rem 0;
+
+    background-color: #2D323D;
+
+}

@@ -1,0 +1,67 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+
+  @media only screen and (max-width: $bp-large) {
+    font-size: 56.25%;
+  }
+  @media only screen and (max-width: $bp-medium) {
+    font-size: 50%;
+  }
+  @media only screen and (max-width: $bp-small) {
+    font-size: 43.75%;
+  }
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  box-sizing: border-box;
+  line-height: 1.7;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: [full-start] 1fr [center-start] repeat(
+      8,
+      minmax(min-content, 14.2rem)
+    ) [center-end] 1fr [full-end];
+  grid-template-rows: 100vh repeat(8, min-content);
+}
+.container-c {
+  grid-column: center-start / center-end;
+
+  display: grid;
+  column-gap: 3rem;
+  row-gap: 6rem;
+  grid-template-columns: repeat(3, minmax(min-content, 1fr));
+
+  @media only screen and (max-width: $bp-medium) {
+    grid-template-columns: repeat(2, minmax(min-content, 1fr));
+  }
+  @media only screen and (max-width: $bp-smallest) {
+    grid-template-columns: repeat(1, minmax(min-content, 1fr));
+  }
+}
+
+.full-grid {
+  grid-column: 1 / -1;
+}

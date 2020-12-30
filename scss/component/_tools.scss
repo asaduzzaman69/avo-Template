@@ -1,0 +1,41 @@
+
+
+.tool-item {
+  text-align: center;
+  transition: all 0.2s;
+
+  &:hover {
+    span {
+      background: linear-gradient(
+        to right,
+        $color-dark-blue 0%,
+        $color-light-red 100%
+      );
+    }
+  }
+
+  span {
+    border-radius: 100%;
+    width: 12.5rem;
+    height: 12.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto auto 2rem auto;
+    align-content: center;
+    box-shadow: 0 17px 30px rgba(0, 0, 0, 0.07);
+  }
+
+  &__icon {
+    width: 5rem;
+    height: 5rem;
+    display: inline-block;
+    fill: #29365c;
+  }
+
+  &__paragraph {
+    font-size: 1.6rem;
+    color: rgba(0, 0, 0, 0.4);
+    word-spacing: 3px;
+  }
+}

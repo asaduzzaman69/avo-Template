@@ -1,0 +1,52 @@
+.feature {
+    align-self: center;
+
+
+    &__text {
+        font-size: 20px;
+        color: $color-grey-dark;
+        margin: 4rem 0;
+
+    }
+
+    &__icon-box {
+
+        @media only screen and (max-width: 48.875em) {
+            margin-bottom: 2rem;
+        }
+
+    }
+
+    &__icon {
+        width:1.7rem;
+        height: 1.7rem;
+        padding:1.7rem;
+        fill: #181b30;
+        border: 1px solid $color-grey-light;
+        border-radius: 100%;
+        cursor: pointer;
+        transition: all .2s;
+
+        &:hover {
+            background: $color-black-blue;
+            fill: white;
+        }
+
+        &:not(:last-child) {
+            margin-right: 1rem;
+        }
+    }
+}
+
+
+.feature-image  {
+    background-image: url(../../image/banner-1.jpg);
+    width: 100%;
+    height: 60rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: grid;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}

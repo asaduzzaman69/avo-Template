@@ -1,0 +1,24 @@
+//COLOR
+
+$color-grey: #ffffff;
+$color-grey-1: #F7F8FB;
+$color-grey-2: #7d7d7d;
+$color-grey-dark: rgb(103, 103, 103);
+$color-grey-light:#e6e6e6;
+$color-dark-blue: #4762ff;
+$color-black-blue: #181b30;
+$color-light-red:#ff798e;
+
+
+
+//GRIDS
+
+$sub-grid: [full-start] 1fr [center-start] repeat(8, minmax(min-content,14.2rem)) [center-end] 1fr [full-end];
+
+
+$bp-large: 68.75em;
+$bp-medium: 56.25em;
+$bp-small: 37.5em;
+$bp-smallest: 26.5625em;
+
+

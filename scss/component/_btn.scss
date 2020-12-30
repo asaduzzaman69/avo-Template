@@ -1,0 +1,77 @@
+.btn-play {
+   
+        align-self: center;
+        justify-self: center;
+        width: 3.6rem;
+        height: 3.6rem;
+        fill: white;
+        background: linear-gradient(to right, $color-dark-blue 0%, $color-light-red 100%);
+        padding: 4rem;
+        border-radius: 100%;
+
+        &--header {
+          @media only screen and (max-width: $bp-medium) {
+            justify-self: flex-start;
+            margin-top: 1rem;
+
+        }  
+     }
+
+        
+
+        &:hover {
+            background: linear-gradient(to left, $color-dark-blue 30%, $color-light-red 70%); 
+        }
+
+  
+}
+
+
+
+
+
+.btn {
+    font-size: 1.6rem;
+    display: inline-block;
+    transition: all .2s;
+   
+
+    &--gredient {
+        background-image: linear-gradient(to left, #4762ff 30%, #ff798e 70%);
+        padding: 1.5rem 4rem;
+        color: white;
+    }
+
+    &--white {
+        padding: 1.5rem 4rem;
+        border: 1px solid #E4E4E4;
+        color: black;
+
+        &:hover {
+            background: black;
+            color: white;
+        }
+    }
+
+    &:not(:last-child) {
+        margin-right: 3rem;
+    }
+
+    &--learn {
+        display: flex;
+        align-items: center;
+        color: $color-dark-blue;
+    }
+
+}
+
+.btn__icon {
+    width: 1.6rem;
+    height: 1.6rem;
+    fill: currentColor;
+    margin-left: 1rem;
+}
+
+.btn-block {
+    margin-top: 3rem;
+}

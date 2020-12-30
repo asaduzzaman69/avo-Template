@@ -1,0 +1,32 @@
+.footer {
+    grid-column: center-start / center-end;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 2rem;
+
+    &__heading {
+        color: white;
+    }
+
+    &__item {
+        font-size: 1.6em;
+
+    }
+
+}
+
+.footer-list {
+    margin-top: 2rem;
+
+    &__item {
+
+    }
+
+    &__link {
+        display: inline-block;
+        padding: 0.5rem 0;
+        color: rgb(152, 162, 170);
+
+    }
+}
+

@@ -1,0 +1,36 @@
+.u-margin-bottom-small {
+    margin-bottom: 1rem;
+}
+
+.u-margin-top-small {
+    margin-top:2rem;
+}
+
+
+.u-center {
+    text-align: center;
+}
+
+.u-m-tb-big {
+    margin: 4rem 0;
+}
+.u-m-tb-medium {
+    margin: 2rem 0;
+}
+
+.u-m-0 {
+    margin: 5px 0 !important;
+}
+
+
+.coloumn-gutter-horizontal {
+    margin: 0 4rem;
+
+    @media only screen and (max-width: $bp-medium) {
+        margin: 0 10rem;
+    }
+    @media only screen and (max-width: $bp-small) {
+        margin: 0 6rem;
+    
+    }
+}

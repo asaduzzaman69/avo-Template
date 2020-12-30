@@ -1,0 +1,77 @@
+.header {
+    grid-column: 1 / -1;
+    background-image: url('../../image/bg-1.jpg');
+    background-size: cover;
+    position: relative;
+
+
+    &__navigation {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 3rem 5rem;
+
+        @media only screen and (max-width: $bp-medium) {
+            background-color: white;
+        }
+       
+    }
+    &__logo {
+        font-size: 2rem;
+
+    }
+    &__icon-box {
+
+        @media only screen and (max-width: $bp-medium) {
+            display: none;
+        }
+
+    }
+    &__icon {
+        width: 1.75rem;
+        height: 1.75rem;
+        padding:0 1rem;
+        fill: rgba($color-grey,0.7);
+        transition:all .2s;
+
+        
+        &-medium {
+            width: 3.5rem;
+            height: 3.5rem;
+            fill:white;
+            margin-right: 1rem;
+        }
+        &:hover {
+            fill:  rgba($color-grey,1);
+        }
+        
+    }
+    &__text-box {
+        
+    }
+    &__content-box {
+        max-width: 114rem;
+        padding: 1.5rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        position: absolute;
+        top: 29%;
+        left: 20%;
+
+        @media only screen and (max-width: $bp-medium) {
+            grid-template-columns: repeat(1, 1fr);
+            left: 14%;
+
+        }
+
+
+      
+    }
+
+    &__tagline {
+        font-size: 1.8rem;
+        color: rgba(255, 255, 255, 0.7);
+        display:flex;
+        align-items: center;
+    }
+}

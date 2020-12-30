@@ -1,0 +1,23 @@
+.nav {
+    display:flex;
+
+    @media only screen and (max-width: $bp-medium) {
+        display: none;
+    }
+
+    &__list {
+        list-style: none;
+    }
+    &__link:link,
+    &__link:visited {
+        font-size: 1.7rem;
+        padding: 1rem 2rem;
+        display: inline-block;
+        color:  rgba($color-grey,0.7);
+        transition: all .2s;
+
+        &:hover {
+            color:  rgba($color-grey,1);
+        }
+    }
+}

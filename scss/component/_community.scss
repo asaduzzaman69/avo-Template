@@ -1,0 +1,31 @@
+.community {
+    grid-column: center-start / center-end;
+    display:flex;
+
+    @media only screen and (max-width: $bp-medium) {
+        flex-direction: column;
+      }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 8rem;
+        @media only screen and (max-width: $bp-medium) {
+            align-items: normal;
+            margin-left: 0;
+      }
+    }
+
+
+    &__slogan {
+        font-size: 5rem;
+        display: block;
+        color: #FFAFA2;
+    }
+
+    &__question {
+        font-size: 1.6rem;
+        color: rgb(255, 255, 255);
+    }
+}
